@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import './App.css';
 
-function MyCalendar() {
+function CalendarPage() {
   const [date, setDate] = useState(new Date());
 
   const onChange = (newDate) => {
@@ -10,7 +11,7 @@ function MyCalendar() {
   };
 
   return (
-    <div>
+    <div className="pocetna">
       <h2>Interactive Calendar</h2>
       <Calendar
         onChange={onChange}
@@ -23,4 +24,4 @@ function MyCalendar() {
   );
 }
 
-export default MyCalendar;
+export default CalendarPage;
