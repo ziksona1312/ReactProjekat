@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import Schedule from './Schedule';
 import './App.css';
 
 function CalendarPage() {
@@ -12,6 +13,7 @@ function CalendarPage() {
 
   return (
     <div className="pocetna">
+      
       <h2>Interactive Calendar</h2>
       <Calendar
         onChange={onChange}
@@ -20,6 +22,7 @@ function CalendarPage() {
       <div>
         Selected Date: {date.toDateString()}
       </div>
+      <Schedule date={date} />
     </div>
   );
 }
