@@ -3,6 +3,7 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import Schedule from './Schedule';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 function CalendarPage() {
   const [date, setDate] = useState(new Date());
@@ -23,6 +24,7 @@ function CalendarPage() {
         Selected Date: {date.toDateString()}
       </div>
       <Schedule date={date} />
+      <Link to="/data-table" className="pocetna-dugme" >View Data Table</Link>
       </div>
     </div>
   );
