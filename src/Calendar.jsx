@@ -13,7 +13,7 @@ function CalendarPage() {
 
   return (
     <div className="pocetna">
-      
+      <div className="schedule-container">
       <h2>Interactive Calendar</h2>
       <Calendar
         onChange={onChange}
@@ -23,6 +23,7 @@ function CalendarPage() {
         Selected Date: {date.toDateString()}
       </div>
       <Schedule date={date} />
+      </div>
     </div>
   );
 }
