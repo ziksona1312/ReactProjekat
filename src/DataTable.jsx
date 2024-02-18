@@ -16,6 +16,7 @@ const DataTable = () => {
   return (
     <div>
       <h2>Schedule Data Table</h2>
+      <div className="tabela-wrapper">
       <table>
         <thead>
           <tr>
@@ -32,6 +33,7 @@ const DataTable = () => {
           ))}
         </tbody>
       </table>
+      </div>
       <Link to="/kalendar" className="pocetna-dugme" >Back to Calendar</Link>
     </div>
   );
