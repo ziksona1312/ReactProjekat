@@ -6,9 +6,9 @@ import Calendar from './Calendar';
 const Pocetna = () => {
     return (
       <div className="pocetna">
-        <h1>Dobrodosli u interaktivni Kalendar!</h1>
+        <h1>Welcome to our interactive Calendar!</h1>
         <Link to="/kalendar" className="pocetna-dugme">
-            OTVORI KALENDAR
+            Open Calendar
         </Link>
       </div>
     );
